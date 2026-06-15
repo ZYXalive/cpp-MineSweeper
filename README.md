@@ -28,7 +28,8 @@
 
  它是单文件图片加载库，方便直接读取 jpg/png，再转成 Windows 的 HBITMAP 来显示背景和图标。
  
-7. 背景图是怎么显示的？ 
+7. 背景图是怎么显示的？
+   
  先用 stbi_load 读出像素，再转成 HBITMAP，最后在 WM_PAINT 里用 StretchBlt 绘制到窗口上。
 
 8. 胜负怎么判断？
